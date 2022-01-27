@@ -16,9 +16,9 @@
 <body>
     <!--Start of Header-->
     <header>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" style="background-color: #f2cea2bb;">
             <div class="container">
-                <h1 class="display">¿Qué son las funciones?</h1>
+                <h1 class="display" style="color: #73280D;">¿Qué son las funciones?</h1>
                 <p class="lead">Las funciones son expresiones que relacionan una entrada con una salida. En otras
                     palabras, cada elemento de un conjunto (i.e. <em>dominio</em>) corresponde a un elemento de un
                     segundo conjunto (i.e. <em>rango</em>).</p>
@@ -29,9 +29,10 @@
 
     <!--Start of Cards-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    
+
     <div class="container">
         <!-- row 2-->
         <div class="row border">
@@ -77,23 +78,29 @@
                 <br>
                 <br>
                 <!--Spacing-->
-            <h2>Características</h2>
-            <ul>
-                <li>
-                    <p>Una función se define a partir de un dominio o conjunto de valores de entrada (<em>x</em>). Estas
-                        variables son <em>independientes.</em></p>
-                </li>
-                <li>
-                    <p>Una función proporciona un valor de salida, <em>f(x)</em>, para cada miembro del dominio. A este
-                        conjunto de valores que genera la función se le denomina rango y está compuesto por variables
-                        <em>dependientes.</em>
-                    </p>
-                </li>
-                <li>
-                    <p>Si dibujas una recta vertical en la gráfica de una función, esta no intersecta la función en más de un punto. </p>
-                </li>
-            </ul>
-        </div>
+                <h2 style="color: #73280D;">Características</h2>
+                <!--Spacing-->
+                <br>
+                <!--Spacing-->
+                <ul>
+                    <li>
+                        <p>Una función se define a partir de un dominio o conjunto de valores de entrada (<em>x</em>).
+                            Estas
+                            variables son <em>independientes.</em></p>
+                    </li>
+                    <li>
+                        <p>Una función proporciona un valor de salida, <em>f(x)</em>, para cada miembro del dominio. A
+                            este
+                            conjunto de valores que genera la función se le denomina rango y está compuesto por
+                            variables
+                            <em>dependientes.</em>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Si dibujas una recta vertical en la gráfica de una función, esta no intersecta la función en más de un punto. </p>
+                    </li>
+                </ul>
+            </div>
             <!--End of List-->
 
             <!--Start of Square-->
@@ -102,14 +109,17 @@
                 <br>
                 <br>
                 <!--Spacing-->
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <p>
-                        Dibujar una recta vertical en una gráfica para verificar si se trata de una función se conoce como: <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">prueba de la recta vertical.</button>
-                    </p>
-                </li>
-            </ul>
-        </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <p>
+                            Dibujar una recta vertical en una gráfica para verificar si se trata de una función se
+                            conoce como: <button type="button" class="btn btn-link" data-toggle="modal"
+                                data-target="#exampleModal" style="color: #73280D;">prueba de la recta vertical.</button>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--End of Square-->
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
@@ -124,7 +134,8 @@
                         <div class="modal-body">
                             <img class="card-img-top" src="assets/recta-vertical.png" alt="Card image cap">
                             <p>
-                                Si una recta vertical puede dibujarse a través de cualquier parte de la gráfica y la recta interseca otra parte de la gráfica, la gráfica no representa una función.
+                                Si una recta vertical puede dibujarse a través de cualquier parte de la gráfica y la
+                                recta interseca otra parte de la gráfica, la gráfica no representa una función.
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -133,10 +144,62 @@
                     </div>
                 </div>
             </div>
-
             <!--End of modal-->
 
-            <!--End of Square-->
+            <!--Start of Carousel-->
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-12">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/partes-plano-cartesiano.jpg" class="d-block w-100" alt="Plano Cartesiano">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: #615A73;">
+                            <h5>Plano Cartesiano</h5>
+                            <p>Son dos ejes perpendiculares en un plano que determinan cuadrantes. Se utiliza para dar las dos coordenadas de un punto</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/swimmer.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="background-color: #615A73;">
+                            <h5>¿Dónde se aplican las funciones?</h5>
+                            <p>Las funciones tienen muchas aplicaciones en la vida cotidiana dado que relacionan valores de entrada con valores de salida. Un ejemplo es el cálculo de la velocidad de un nadador con base en el tiempo <em>x</em> que le tomó recorrer una distancia <em>f(x)</em>.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+            <!--End of Carousel-->
+
+            <!--Start of Cheatsheet-->
+            
+            <!--End of Cheatsheet-->
+
+            <!--Start of Quote-->
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-12">
+            <blockquote class="blockquote text-center">
+                <!--Spacing-->
+                <br>
+                <br>
+                <!--Spacing-->
+                <p class="mb-0">Una función es un conjunto de parejas ordenadas en las que ninguna primera ordenada se repite.</p>
+                <footer class="blockquote-footer">Definición alterna de  <cite title="Source Title">función</cite></footer>
+            </blockquote>
+        </div>
+            <!--End of Quote-->
 
             <!-- jQuery and Bootstrap Bundle (includes Popper) -->
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
