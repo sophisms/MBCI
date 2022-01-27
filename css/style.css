@@ -1,0 +1,13 @@
+@import url("../variables.css");
+
+#video-abouUs {
+    font-family: var(--font-body);
+}
+
+.main-container {
+    background-color: var(--colorMainSection);
+}
+
+.container {
+    padding: 0 15%;
+}
