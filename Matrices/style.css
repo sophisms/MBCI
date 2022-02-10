@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Varela+Round&display=swap');
+
+body {
+    background-color: white;
+    overflow-x: auto;
+}
+
+h1 {
+    font-family: 'Varela Round', sans-serif;
+    color: #fdfde5;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Varela Round', sans-serif;
+    color: #82b0d9;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 12pt;
+}
+
+#header-section {
+    background-color: #cde2db;
+    border-style: none !important;
+    text-align: justify;
+}
+
+/* Carousel */
+.card-start {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.card-end {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.carousel {
+    border-radius: 30px 30px 30px 30px !important;
+    overflow: hidden !important;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+}
+
+.card-header {
+    width: 100%;
+    height: 5vw !important;
+}
+
+
+.card-body {
+    width: 100%;
+    height: 20vw !important;
+}
+
+/* /Carousel */

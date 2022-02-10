@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Title -->
+    <title>Matrices</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header-section">
+        <div class="jumbotron jumbotron-fluid py-5">
+            <div class="container-lg">
+                <h1 class="display">¿Cómo balancear ecuaciones químicas utilizando álgebra lineal?</h1>
+                <p class="lead">En general, para balancear ecuaciones químicas se identifican primero los elementos
+                    poco comunes en los compuestos, después se avanza hacia el hidrógeno y el oxígeno. Sin embargo, hay
+                    otro
+                    enfoque más sistemático que utiliza el álgebra lineal.</p>
+            </div>
+        </div>
+    </header>
+    <!-- \Header -->
+
+    <!-- Cards -->
+    <section id="cards-section">
+        <div class="container py-3 mt-5">
+            <h2 class="mb-4">Pasos</h2>
+            <!-- Carousel -->
+            <div id="carouselExampleControls" class="carousel slide mt-3 style-border" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-md-3" style="float:left">
+                            <div class="card card-start mb-2">
+                                <img class="card-img-top"
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3470bbe2cd18058e65d6afc10c8a5603fd8b4a6b"
+                                    alt="Card image cap">
+                                <div class="card-header">
+                                    <h3>1. Identifica la ecuación química a balancear</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>A través del balanceo, se representa en una ecuación el número exacto de átomos,
+                                        moléculas o moles que participan en una reacción, ya sea como reactantes o
+                                        productos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="./assets/elements.PNG" alt="Card image cap">
+                                <div class="card-header">
+                                    <h3>2. Identifica los elementos involucrados</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>El número de elementos presentes en la ecuación determina cuántas filas habrá en
+                                        los vectores y matrices que vamos a construir. En la imagen, el orden que
+                                        enumeramos corresponde al orden de las filas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/11fed8ba2e9f413dc4a67885ba80d1bede47697d"
+                                    alt="Card image cap">
+                                <div class="card-header">
+                                    <h3>3. Establece la ecuación vectorial</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>La ecuación vectorial consiste en vectores de columna correspondientes a cada
+                                        compuesto en la ecuación. Asegúrate de entender cómo contar el número de átomos
+                                        en una molécula.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="float:left">
+                            <div class="card card-end mb-2">
+                                <img class="card-img-top"
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24eb1f901ce5e102880b5d9c1fc768138f9fa885"
+                                    alt="Card image cap">
+                                <div class="card-header">
+                                    <h3>4. Obtén la matriz aumentada</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Iguala la ecuación a 0 para después poder reducir por filas la matriz de
+                                        coeficientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3" style="float:left">
+                            <div class="card card-start mb-2">
+                                <img class="card-img-top"
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a74cc6e7626a8c818f9f12da53717205527fb063"
+                                    alt="Card image cap">
+                                <div class="card-header">
+                                    <h3>5. Calcula la matriz de identidad</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Hay diferentes maneras de obtener la matriz de identidad. Una manera es
+                                        obteniendo la matriz inversa, ya que el producto de una matriz y su inversa
+                                        resulta en la matriz de identidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="./assets/variables.PNG" alt="Card image cap">
+                                <div class="card-header">
+                                    <h3>6. Resuelve las variables</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Reparametriza la variable libre y resuelve las variables dejando de igualar a
+                                        cero.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="./assets/MCM.PNG" alt="Card image cap">
+                                <div class="card-header">
+                                    <h3>7. Sustituye por un valor apropiado de <em>t</em></h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Recuerda que los coeficientes en la ecuación química deben ser números enteros.
+                                        Por lo tanto, establece <em style="font-family: 'Courier New', Courier, monospace
+                                        ;">t=12</em> como el mínimo común múltiplo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="float:left">
+                            <div class="card card-end mb-2">
+                                <img class="card-img-top"
+                                    src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cf59cf9acadff9f3b090c3a039c580bedf4fffde"
+                                    alt="Card image cap">
+                                <div class="card-header">
+                                    <h3>8. Sustituye los coeficientes en la reacción</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>La ecuación ahora está balanceada.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- \Cards -->
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- \Script -->
+
+</body>
+
+</html>
